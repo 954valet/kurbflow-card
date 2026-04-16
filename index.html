@@ -216,8 +216,7 @@
         'ADR;TYPE=WORK:;;Coconut Creek;FL;;;US',
         'NOTE:Valet Trash Service - Serving Broward County, Florida. Reliable, Clean, Professional.',
         'END:VCARD'
-      ].join('
-');
+      ].join('\n');
 
       var blob = new Blob([vcard], { type: 'text/vcard' });
       var url = URL.createObjectURL(blob);
